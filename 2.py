@@ -42,8 +42,6 @@ def gradient_descent(x_values, y_values):
     
     return params
 
-# 初始化参数
-parameters = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 # 生成样本数据
 x_values = [i * 0.1 for i in range(-31, 32)]
 y_values = [sum([((-1)**k * x**(2*k+1)) / factorial(2*k+1) for k in range(10)]) for x in x_values]
